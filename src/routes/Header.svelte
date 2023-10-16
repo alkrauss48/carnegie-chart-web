@@ -1,12 +1,12 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
+	import logo from '$lib/images/ak-logo.png';
 	import github from '$lib/images/github.svg';
 </script>
 
 <header>
-	<div class="corner">
-		<a href="https://kit.svelte.dev">
+  <div class="corner" style="background: black;">
+		<a target="_blank" href="https://thecodeboss.dev">
 			<img src={logo} alt="SvelteKit" />
 		</a>
 	</div>
@@ -17,13 +17,13 @@
 		</svg>
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
+				<a href="/">Charts</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
+				<a href="/about">Descriptions</a>
 			</li>
 			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Sverdle</a>
+				<a href="/sverdle">How It Works</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -32,7 +32,7 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
+		<a target="_blank" href="https://github.com/alkrauss48/carnegie-chart-web">
 			<img src={github} alt="GitHub" />
 		</a>
 	</div>
